@@ -83,11 +83,3 @@ def get_recommendations(titulo_base):
     lista_titulos = df['title'].iloc[lista_de_indices]
 
     return {"recommendations": list(lista_titulos)}
-
-
-if __name__ == "__main__":
-    load_data_and_build_model()
-    filme = input("Digite o nome de um filme: ")
-    print(get_recommendations(filme))
-
-
